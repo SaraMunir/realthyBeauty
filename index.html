@@ -61,7 +61,7 @@
         }
         .featured {
             padding-top: 50px;
-            height: 100vh;
+            /* height: 100vh; */
         }
         .featProd{
             width: 85%;
@@ -122,8 +122,17 @@
         .myBtn2:hover {
             background: #5a8736;
             border: 2px solid #5a8736;
-
             color: white;
+        }
+        .social{
+            height: 20vh;
+            padding: 30px;
+            cursor: pointer;
+            transition: ease all .5s;
+
+        }
+        .social:hover{
+            color: #5a8736;
         }
         
             /* background: #cad8d8; */
@@ -210,9 +219,11 @@
             </div>
         </div>
     </section>
-    <footer>
-
-
+    <footer class="d-flex justify-content-center">
+        <i class="fab fa-instagram fa-2x social"></i>
+        <i class="fab fa-facebook-f fa-2x social"></i>
+        <i class="fab fa-instagram fa-2x social"></i>
+        <i class="fab fa-twitter fa-2x social"></i>
     </footer>
     <script>
         $(document).ready(function(){
@@ -230,15 +241,15 @@
                 return;
             });
             $( "#viewBox1" ).mouseleave(function() {
-                $( "#viewBox1" ).fadeOut(500);
+                $( "#viewBox1" ).fadeOut(50);
                 return;
             });
             $( "#viewBox2" ).mouseleave(function() {
-                $( "#viewBox2" ).fadeOut(500);
+                $( "#viewBox2" ).fadeOut(50);
                 return;
             });
             $( "#viewBox3" ).mouseleave(function() {
-                $( "#viewBox3" ).fadeOut(500);
+                $( "#viewBox3" ).fadeOut(50);
                 return;
             });
         });
