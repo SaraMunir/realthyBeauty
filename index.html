@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realthy Beauty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Josefin Sans', sans-serif;
+
+        }
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background: url(assets/jace-afsoon-K4XHqPZq66c-unsplash-m.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            object-fit: cover;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .heroHead {
+            margin: 80px auto 0 auto;
+            font-size: 4rem;
+            text-align: center;
+            color: rgb(68, 68, 68);
+        }
+        .heroCapt{
+            font-family: 'Satisfy', cursive;
+            font-size: 3rem;
+            text-align: center;
+            color: rgb(68, 68, 68);
+            }
+        .about{
+            /* height: 100vh; */
+            /* padding: 50px; */
+            background: #d0d6c9;
+        }
+        .aboutPic{
+            /* border: 1px solid #717969; */
+            width: 50% ;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .aboutTxt{
+            /* border: 1px solid #717969; */
+            width: 100%;
+            padding: 50px 40px;
+        }
+        img {
+            width: 100%;
+            /* height: 100%; */
+        }
+        .featured {
+            padding-top: 50px;
+            height: 100vh;
+        }
+        .featProd{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .prodBox {
+            border: 1px solid #5d813a;
+            width: 55vh;
+            height: 60vh;
+            object-fit: cover;
+        }
+        .myBtn{
+            border: 2px solid #5d813a;
+            padding: 10px;
+            cursor: pointer;
+        }
+            /* background: #cad8d8; */
+            /* background: #c9d6bc; */
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <!-- <img src="assets/jace-afsoon-K4XHqPZq66c-unsplash-m.jpg" alt=""> -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="heroText">
+            <h1 class="heroHead">REALTHY BEAUTY</h1>
+            <p class="heroCapt">Vegan friendly Product</p>
+
+        </div>
+    </section>
+    <section class="about text-center d-flex">
+        <img class="aboutPic"src="assets/gabrielle-henderson-1DMNn6gBbwQ-unsplash.jpg" alt="">
+        
+        <div class="aboutTxt">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet deleniti ducimus officia ullam optio corporis similique quas magni, doloremque illum, et a ex quibusdam aliquid laboriosam maiores possimus quisquam?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate ratione adipisci modi non, temporibus iure, dolores dignissimos dolorum incidunt asperiores quasi aliquid ipsam deleniti, explicabo atque consequuntur cupiditate obcaecati? Odit!
+            </p>
+            <div class="myBtn">
+                Explore
+            </div>
+        </div>
+    </section>
+    <section class="text-center featured">
+        <h2>Featured Products</h2>
+        <div class="featProd row ">
+            <div>
+                <img class="prodBox mx-auto" src="assets/deanna-alys-6LBBOwkPzyQ-unsplash.jpg" alt="" onClick="showDetail()">
+                <div class="viewDetail">
+
+                </div>
+
+            </div>
+            <img class="prodBox mx-auto" src="assets/deanna-alys-6LBBOwkPzyQ-unsplash.jpg" alt="">
+            <img class="prodBox mx-auto" src="assets/deanna-alys-6LBBOwkPzyQ-unsplash.jpg" alt="">
+        </div>
+    </section>
+    <script>
+        function showDetail(){
+            console.log('do somehitng??')
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
