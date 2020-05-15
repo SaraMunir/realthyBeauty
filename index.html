@@ -7,7 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <style>
         body{
             margin: 0;
@@ -50,7 +54,7 @@
         .aboutTxt{
             /* border: 1px solid #717969; */
             width: 100%;
-            padding: 50px 40px;
+            padding: 100px 40px;
         }
         img {
             width: 100%;
@@ -61,20 +65,69 @@
             height: 100vh;
         }
         .featProd{
-            width: 80%;
+            width: 85%;
+            margin: 0 auto;
+        }
+        .box1 {
+            position: relative;
+            border-radius: 5px;            /* margin: 5px; */
             margin: 0 auto;
         }
         .prodBox {
-            border: 1px solid #5d813a;
+            /* border: 1px solid #5d813a; */
+            border-radius: 5px;
             width: 55vh;
             height: 60vh;
             object-fit: cover;
         }
-        .myBtn{
-            border: 2px solid #5d813a;
-            padding: 10px;
-            cursor: pointer;
+        .viewBox{
+            border-radius: 5px;
+            color: white;
+            /* width: 55vh;
+            height: 60vh; */
+            padding: 50px 0;
+            background: #65814ea4;
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
         }
+        .veiwTxt{
+            height: 30vh;
+        }
+        .myBtn{
+            width: 200px;
+            border: 2px solid #5d813a;
+            color: #5d813a;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 auto;
+            transition: ease all .5s;
+        }
+        .myBtn2{
+            width: 200px;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 auto;
+            transition: ease all .5s;
+        }
+        .myBtn:hover {
+            background: #5a8736;
+            color: white;
+        }
+        .myBtn2:hover {
+            background: #5a8736;
+            border: 2px solid #5a8736;
+
+            color: white;
+        }
+        
             /* background: #cad8d8; */
             /* background: #c9d6bc; */
     </style>
@@ -116,31 +169,77 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate ratione adipisci modi non, temporibus iure, dolores dignissimos dolorum incidunt asperiores quasi aliquid ipsam deleniti, explicabo atque consequuntur cupiditate obcaecati? Odit!
             </p>
             <div class="myBtn">
-                Explore
+                EXPLORE
             </div>
         </div>
     </section>
     <section class="text-center featured">
         <h2>Featured Products</h2>
         <div class="featProd row ">
-            <div>
-                <img class="prodBox mx-auto" src="assets/deanna-alys-6LBBOwkPzyQ-unsplash.jpg" alt="" onClick="showDetail()">
-                <div class="viewDetail">
-
+            <div class="box1">
+                <img class="prodBox mx-auto" src="assets/deanna-alys-6LBBOwkPzyQ-unsplash.jpg" alt="" id="showDetail1" >
+                <div class="viewBox" id="viewBox1">
+                    <div class="veiwTxt">
+                        <h4>something</h4>
+                    </div>
+                    <div class="myBtn2">
+                        VIEW DETAIL
+                    </div>
                 </div>
-
             </div>
-            <img class="prodBox mx-auto" src="assets/deanna-alys-6LBBOwkPzyQ-unsplash.jpg" alt="">
-            <img class="prodBox mx-auto" src="assets/deanna-alys-6LBBOwkPzyQ-unsplash.jpg" alt="">
+            <div class="box1">
+                <img class="prodBox mx-auto" src="assets/gabrielle-henderson-1DMNn6gBbwQ-unsplash.jpg" alt="" id="showDetail2" >
+                <div class="viewBox" id="viewBox2">
+                    <div class="veiwTxt">
+                        <h4>something</h4>
+                    </div>
+                    <div class="myBtn2">
+                        VIEW DETAIL
+                    </div>
+                </div>
+            </div>
+            <div class="box1">
+                <img class="prodBox mx-auto" src="assets/gabrielle-henderson-xTLqJqtq8R4-unsplash.jpg" alt="" id="showDetail3" >
+                <div class="viewBox" id="viewBox3">
+                    <div class="veiwTxt">
+                        <h4>something</h4>
+                    </div>
+                    <div class="myBtn2">
+                        VIEW DETAIL
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </section>
     <script>
-        function showDetail(){
-            console.log('do somehitng??')
-        }
+        $(document).ready(function(){
+
+            $( "#showDetail1" ).mouseover(function() {
+                $( "#viewBox1" ).fadeIn(600);
+                return;
+            });
+            $( "#showDetail2" ).mouseover(function() {
+                $( "#viewBox2" ).fadeIn(600);
+                return;
+            });
+            $( "#showDetail3" ).mouseover(function() {
+                $( "#viewBox3" ).fadeIn(600);
+                return;
+            });
+            $( "#viewBox1" ).mouseleave(function() {
+                $( "#viewBox1" ).fadeOut(600);
+                return;
+            });
+            $( "#viewBox2" ).mouseleave(function() {
+                $( "#viewBox2" ).fadeOut(600);
+                return;
+            });
+            $( "#viewBox3" ).mouseleave(function() {
+                $( "#viewBox3" ).fadeOut(600);
+                return;
+            });
+        });
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
