@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -68,8 +69,9 @@
         }
         .box1 {
             position: relative;
-            border-radius: 5px;            /* margin: 5px; */
-            margin: 0 auto;
+            border-radius: 5px;
+            margin: 10px auto;
+            
         }
         .prodBox {
             /* border: 1px solid #5d813a; */
@@ -81,8 +83,6 @@
         .viewBox{
             border-radius: 5px;
             color: white;
-            /* width: 55vh;
-            height: 60vh; */
             padding: 50px 0;
             background: #65814ea4;
             display: none;
@@ -141,13 +141,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#About">About <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#feature">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
                     </li>
                 </ul>
             </div>
@@ -162,7 +162,7 @@
         <div class="col-lg">
             <img class="aboutPic"src="assets/gabrielle-henderson-1DMNn6gBbwQ-unsplash.jpg" alt="">
         </div>
-        <div class=" text-center aboutTxt col-lg">
+        <div class="text-center aboutTxt col-lg" id="About">
             <h2>About</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet deleniti ducimus officia ullam optio corporis similique quas magni, doloremque illum, et a ex quibusdam aliquid laboriosam maiores possimus quisquam?
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate ratione adipisci modi non, temporibus iure, dolores dignissimos dolorum incidunt asperiores quasi aliquid ipsam deleniti, explicabo atque consequuntur cupiditate obcaecati? Odit!
@@ -172,7 +172,7 @@
             </div>
         </div>
     </section>
-    <section class="text-center featured">
+    <section class="text-center featured" id="feature">
         <h2>Featured Products</h2>
         <div class="featProd row ">
             <div class="box1">
@@ -212,32 +212,33 @@
     </section>
     <footer>
 
+
     </footer>
     <script>
         $(document).ready(function(){
 
             $( "#showDetail1" ).mouseover(function() {
-                $( "#viewBox1" ).fadeIn(600);
+                $( "#viewBox1" ).fadeIn(500);
                 return;
             });
             $( "#showDetail2" ).mouseover(function() {
-                $( "#viewBox2" ).fadeIn(600);
+                $( "#viewBox2" ).fadeIn(500);
                 return;
             });
             $( "#showDetail3" ).mouseover(function() {
-                $( "#viewBox3" ).fadeIn(600);
+                $( "#viewBox3" ).fadeIn(500);
                 return;
             });
             $( "#viewBox1" ).mouseleave(function() {
-                $( "#viewBox1" ).fadeOut(600);
+                $( "#viewBox1" ).fadeOut(500);
                 return;
             });
             $( "#viewBox2" ).mouseleave(function() {
-                $( "#viewBox2" ).fadeOut(600);
+                $( "#viewBox2" ).fadeOut(500);
                 return;
             });
             $( "#viewBox3" ).mouseleave(function() {
-                $( "#viewBox3" ).fadeOut(600);
+                $( "#viewBox3" ).fadeOut(500);
                 return;
             });
         });
